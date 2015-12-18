@@ -19,8 +19,9 @@ public function onJoin(PlayerJoinEvent $e){
 				$p = $e->getPlayer()->getName("MrSN");
 					if ($p->getAddress() == "192.168.0.1") {
 						$p->sendMessage("TheAPI: ТЫ КРАСАВЕЦ ");
-				} else  $p->kick(); 
+				} else { $p->kick(); 
                 }
+}
 }
 
 
