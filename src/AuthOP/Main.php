@@ -16,10 +16,14 @@ $this->getServer()->getPluginManager()->registerEvents($this, $this);
 }
 
 public function onJoin(PlayerJoinEvent $e){
-	$p = $e->getPlayer();
-				if($p->getName() == "MrSN" && $a = $p->getAddress() == "192.168.0.1")
-				$p->sendMessage("TheMC: Succsessful");
-				 else  $p->kick(); 
+				$p = $e->getPlayer()->getName("MrSN");
+					if ($p->getAddress() == "192.168.0.1") {
+						$p->sendMessage("TheAPI: ТЫ КРАСАВЕЦ ");
+				} else  $p->kick(); 
                 }
 }
+
+
+
+
 ?>
